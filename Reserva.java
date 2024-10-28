@@ -33,7 +33,7 @@ public class Reserva {
 
     // Método para calcular el tiempo restante del contrato
     public long calcularTiempoRestante() {
-        return ChronoUnit.DAYS.between(LocalDate.now(), fechaFin);
+        return ChronoUnit.DAYS.between(fechaInicio, fechaFin);
     }
 
     // Getters

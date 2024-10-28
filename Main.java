@@ -46,8 +46,8 @@ public class Main {
         Vehiculo vehiculoPrevia = obtenerVehiculoPrevia(agencia, "DDD321"); // Método para obtener el vehículo por patente
 
         // Fechas de la reserva
-        LocalDate fechaInicioPrevio = LocalDate.of(2024, 1, 1);
-        LocalDate fechaFinPrevio = LocalDate.of(2024, 3, 1);
+        LocalDate fechaInicioPrevio = LocalDate.of(2025, 1, 1);
+        LocalDate fechaFinPrevio = LocalDate.of(2025, 3, 2);
 
         // Realizar la reserva
         agencia.realizarReserva(clientePrevia, empleadoPrevia, vehiculoPrevia, fechaInicioPrevio, fechaFinPrevio);
@@ -56,7 +56,7 @@ public class Main {
         mostrarMenu(scanner, agencia, clientes, empleadoSeleccionado);
     }
 
-    // Método para mostrar el menú de opciones
+    // Metodo para mostrar el menú de opciones
     public static void mostrarMenu(Scanner scanner, Agencia agencia, List<Cliente> clientes, Empleado empleadoSeleccionado) {
         int opcion = 0;
         while (opcion != 5) {
@@ -102,7 +102,7 @@ public class Main {
         }
     }
 
-    // Método para contratar un auto
+    // Metodo para contratar un auto
     public static void contratarAuto(Scanner scanner, Agencia agencia, List<Cliente> clientes, Empleado empleadoSeleccionado) {
         if (clientes.isEmpty()) {
             System.out.println("No hay clientes registrados. Primero registre un cliente.");
